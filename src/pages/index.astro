@@ -11,8 +11,6 @@ const { items: articles } = await newtClient.getContents<Article>({
     select: ['title', 'slug', 'body'],
   },
 });
-
-// const response = await getBlogs({ fields: ['id', 'title'] });
 ---
 
 <Layout title="トップページです">
@@ -24,8 +22,8 @@ const { items: articles } = await newtClient.getContents<Article>({
   </style>
   <main class="overflow-hidden">
     <video class="size-full" id="loading-animation" autoplay muted>
-      <source src="./images/loading.mp4" type="video/mp4" />
-       Your browser does not support the video tag.
+      <source src="./images/loading.mp4" type="video/mp4" />Your browser does
+      not support the video tag.
     </video>
     <h2 class="text-white">newtでブログ</h2>
     <ul>
@@ -40,16 +38,6 @@ const { items: articles } = await newtClient.getContents<Article>({
           );
         })
       }
-      <!-- {
-        response.contents.map((blog: any) => {
-          return (
-            <li class="text-white">
-              <a href={blog.id}>{blog.title}</a>
-            </li>
-          );
-        })
-      } -->
-      <!-- <p class="text-fdf text-white"><a href="/page02">page02へ移動</a></p> -->
     </ul>
   </main>
 </Layout>
