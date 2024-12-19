@@ -1,6 +1,6 @@
-# SplineWEB構成
+# Spline
 
-![screenshot](https://github.com/masakitami/astro-newt-env/blob/main/public/images/image.png)
+<!-- ![screenshot](https://github.com/masakitami/astro-newt-env/blob/main/public/images/image.png) -->
 
 ## 🖋 概要
 WEBの開発環境です。フロントエンドツールには「vite」を利用しているため、高速に静的サイトを開発することが可能です。
