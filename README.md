@@ -45,7 +45,7 @@ CMSはHeadlessCMSの[NEWT](https://www.newt.so/)を採用しました。
 └── package.json
 ```
 
-Astroは、src/pages/ディレクトリ内の.astroまたは.mdファイルを探します。それぞれのページは、ファイル名に基づいてルートとして公開されます。
+Astroのページは、ファイル名に基づいてルートとして公開されます。
 
 src/components/ディレクトリに特別な意味はありませんが、AstroやReact、Vue、Svelte、Preactのコンポーネントをここに配置することが一般的です。
 
