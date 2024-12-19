@@ -20,12 +20,8 @@ export const getStaticPaths = async () => {
 const { article } = Astro.props;
 ---
 
-<style>
-  * {
-    color: white;
-  }
-</style>
-
 <Layout title="Article" />
-<h1>{article.title}</h1>
-<article set:html={article.body} />
+<div class="p-[3em]">
+	<h1 class="mb-[2em]">{article.title}</h1>
+	<article set:html={article.body} />
+</div>

@@ -21,38 +21,21 @@ const { items: articles } = await newtClient.getContents<Article>({
     }
   </style>
   <main class="overflow-hidden">
-    <video class="size-full" id="loading-animation" autoplay muted>
-      <source src="./images/loading.mp4" type="video/mp4" />Your browser does
-      not support the video tag.
-    </video>
-    <h2 class="text-white">newtでブログ</h2>
-    <ul>
-      {
-        articles.map((article) => {
-          return (
-            <li>
-              <a class="text-white" href={`articles/${article.slug}`}>
-                {article.title}
-              </a>
-            </li>
-          );
-        })
-      }
-    </ul>
+    <div class="p-[3em]">
+			<h2 class="mb-[2em] text-[24px]">newtでブログ</h2>
+			<ul>
+				{
+					articles.map((article) => {
+						return (
+							<li>
+								<a class="hover:text-green-400" href={`articles/${article.slug}`}>
+									{article.title}
+								</a>
+							</li>
+						);
+					})
+				}
+			</ul>
+		</div>
   </main>
 </Layout>
-<script>
-  const video = document.getElementById('loading-animation');
-
-  document.addEventListener('DOMContentLoaded', function () {
-    if (video instanceof HTMLVideoElement) {
-      video.play();
-    }
-  });
-
-  if (video)
-    video.addEventListener('ended', function () {
-      console.log('video終わりました');
-      video.classList.add('fade-out');
-    });
-</script>
