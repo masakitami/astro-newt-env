@@ -1,13 +1,13 @@
-# Splineアーキテクチャ
+# SplineWEB構成
 
-![screenshot](https://github.com/masakitami/kanazawa-saryo/blob/main/public/images/image.png)
+![screenshot](https://github.com/masakitami/astro-newt-env/blob/main/public/images/image.png)
 
 ## 🖋 概要
 WEBの開発環境です。フロントエンドツールには「vite」を利用しているため、高速に静的サイトを開発することが可能です。
 また、フレームワークは[Astro](https://astro.build/)を採用し、ホスティングサービスは[Vercel](https://vercel.com/)を使用しています。
 
 - [vercelサーバーのURL](https://astro-newt-env.vercel.app/)
-- [figma](https://www.figma.com/design/9Q6cyRK2v4icOTtGtJGQa3/Spline_web?node-id=789-1544&t=5GviVwQrAo291kTO-1)
+- [デザインデータ](https://www.figma.com/design/9Q6cyRK2v4icOTtGtJGQa3/Spline_web?node-id=789-1544&t=5GviVwQrAo291kTO-1)
 
 
 ## 👨‍💻 準備
@@ -16,7 +16,7 @@ WEBの開発環境です。フロントエンドツールには「vite」を利�
 - git
 
 ## 📖 WEBアーキテクチャー
-![screenshot](https://github.com/masakitami/kanazawa-saryo/blob/main/public/images/architecture.jpg)
+![screenshot](https://github.com/masakitami/astro-newt-env/blob/main/public/images/architecture.jpg)
 WordPressではなくJAMstackを導入する。これにより、バックエンドシステムが不要となり、ユーザーフレンドリーでありながら、ページの読み込み速度が非常に速くなるという利点とセキュリティの堅牢さを担保できるため、ユーザーにとって快適な閲覧体験を提供することができます。CMSはHeadlessCMSの[NEWT](https://www.newt.so/)を採用しました。
 
 
