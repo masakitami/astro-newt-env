@@ -17,7 +17,12 @@ WEBの開発環境です。フロントエンドツールには「vite」を利�
 
 ## 📖 WEBアーキテクチャー
 ![screenshot](https://github.com/masakitami/astro-newt-env/blob/main/public/images/architecture.jpg)
-WordPressではなくJAMstackを導入する。これにより、バックエンドシステムが不要となり、ユーザーフレンドリーでありながら、ページの読み込み速度が非常に速くなるという利点とセキュリティの堅牢さを担保できるため、ユーザーにとって快適な閲覧体験を提供することができます。CMSはHeadlessCMSの[NEWT](https://www.newt.so/)を採用しました。
+
+WordPressではなくJAMstackを導入する。これにより、バックエンドシステムが不要となり、ユーザーフレンドリーでありながら、
+
+ページの読み込み速度が非常に速くなるという利点とセキュリティの堅牢さを担保できるため、ユーザーにとって快適な閲覧体験を提供することができます。
+
+CMSはHeadlessCMSの[NEWT](https://www.newt.so/)を採用しました。
 
 
 ## 💨 デプロイ方法
@@ -47,7 +52,7 @@ src/components/ディレクトリに特別な意味はありませんが、Astro
 画像などの静的アセットは、public/ディレクトリに配置できます。
 
 
-## 🧞 Command
+## 🧞 コマンド
 
 すべてのコマンドは、プロジェクトのルートディレクトリでターミナルから実行します:
 
@@ -59,3 +64,6 @@ src/components/ディレクトリに特別な意味はありませんが、Astro
 | `npm run preview`         | Preview your build locally, before deploying     |
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro -- --help` | Get help using the Astro CLI                     |
+
+## 💨 NEWTと連携
+.envファイルのNEWT_SPACE_UIDとNEWT_CDN_API_TOKENの設定をすることで、API連携が可能です。
